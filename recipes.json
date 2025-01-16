@@ -1,0 +1,17 @@
+{
+    "pancake": {
+      "name": "Pancake",
+      "description": "Fluffy and delicious pancakes.",
+      "ingredients": ["Eggs (2pcs)", "Milk (20ml / tsp)", "All purpose flour (30g / 3.3 tbsp)", "Sugar (25g / 2 tbsp)", "Hand Crushed Cardamom Seeds (from 3-4 of them)"],
+      "procedure": "Start by separating 2 large eggs into yolks and whites. Mix the yolks with 20 ml (4 teaspoons) of milk until smooth. Sift 30 grams (3.3 tablespoons) of all-purpose or low-gluten flour into the yolk mixture, then mix well. Sift crushed cardamom seeds to the mixture, and stir until the batter is smooth. Next, whip the egg whites with an electric whisk on medium-high speed. Gradually add 25 grams (2 tablespoons) of sugar in three portions: first when large bubbles appear, then when smaller bubbles form, and finally when the texture becomes more visible. Continue beating on medium-low speed until stiff peaks form. Fold one-third of the whipped egg whites into the yolk batter and mix gently. Pour this mixture back into the remaining meringue and combine carefully to maintain the fluffy texture. Transfer the batter into a piping bag. Preheat a non-stick pan over low heat, add a drop of cooking oil, and spread it evenly using kitchen paper. Pipe the batter into the pan, creating three pancakes. Add 2 teaspoons of water to the pan, cover it, and cook on low heat for about 5 minutes. Flip the pancakes carefully, add 1 teaspoon of water, cover, and cook for another 5 minutes. Once done, remove the pancakes from the pan, and serve with butter and syrup for a deliciously fluffy treat.",
+      "hardness": 3
+    },
+    "chocolate-chip-cookie": {
+      "name": "Chocolate Chip Cookie",
+      "description": "Classic cookies loaded with chocolate chips.",
+      "ingredients": ["Unsalted butter (200g/0.875 cup)", "Brown sugar (80g/0.5 cup)", "Granulated sugar (90g/0.5 cup)", "Eggs (2)", "All-purpose flour (200g/1.6 cups)", "Cake flour (120g/1 cup)", "Cornstarch (6g/2 teaspoons)", "Baking powder (4g/1 teaspoon)", "Baking soda (3g/0.5 teaspoon)", "Chopped walnuts (200g/2 cups)", "Chocolate (320g/2 cups)"],
+      "procedure": "To make these simple and delicious cookies, begin by creaming together 200 grams (7/8 cup) of unsalted butter, 80 grams (1/2 cup) of brown sugar, and 90 grams (1/2 cup) of granulated sugar in a mixing bowl. Stir the mixture first, then whip it with electric beaters until it becomes slightly whitened. Beat in 2 eggs and whisk the mixture until well combined, using a spatula to clean the sides of the bowl as needed. In a separate bowl, combine the dry ingredients: 200 grams (1.6 cups) of all-purpose or wheat flour, 120 grams (1 cup) of cake flour, 6 grams (2 teaspoons) of cornstarch, 4 grams (1 teaspoon) of baking powder, and 3 grams (1/2 teaspoon) of baking soda. Mix these thoroughly and then gradually add them to the wet ingredients. Stir in 200 grams (2 cups) of chopped walnuts and 320 grams (2 cups) of chocolate, mixing well to ensure even distribution. Take about 160 grams of the dough, knead it, and form it into balls. This recipe makes approximately 8 dough balls. Place the balls into a container, cover them with plastic wrap, and refrigerate for at least 2 hours or overnight for best results. When ready to bake, place the dough balls on a baking sheet and bake in a preheated oven at 180°C (360°F) for 20 minutes. Let the cookies cool before serving. Enjoy!!",
+      "hardness": 5
+    }
+  }
+  
