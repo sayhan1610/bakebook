@@ -4,7 +4,6 @@ import requests
 import os
 from pydantic import BaseModel, Field
 
-
 app = FastAPI()
 
 try:
@@ -16,10 +15,8 @@ except FileNotFoundError:
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
-
 if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
     raise RuntimeError("Telegram bot token or chat ID is not set. Check your environment variables.")
-
 
 class RecipeSubmission(BaseModel):
     name: str = Field(..., description="Name of the recipe")
@@ -28,27 +25,23 @@ class RecipeSubmission(BaseModel):
     procedure: str = Field(..., description="Step-by-step procedure to make the recipe")
     hardness: int = Field(..., ge=1, le=10, description="Difficulty level of the recipe out of 10")
 
-
-@app.get("/pancake")
-async def get_pancake():
-    recipe = recipes.get("pancake")
+@app.get("/recipes/{recipe_name}")
+async def get_recipe(recipe_name: str):
+    recipe = recipes.get(recipe_name.lower())
     if not recipe:
-        raise HTTPException(status_code=404, detail="Recipe for pancake not found.")
+        raise HTTPException(status_code=404, detail=f"Recipe for {recipe_name} not found.")
     return recipe
 
-
-@app.get("/chocolate-chip-cookie")
-async def get_chocolate_chip_cookie():
-    recipe = recipes.get("chocolate-chip-cookie")
-    if not recipe:
-        raise HTTPException(status_code=404, detail="Recipe for chocolate chip cookies not found.")
-    return recipe
-
+@app.get("/search")
+async def search_recipes(keyword: str):
+    results = {name: data for name, data in recipes.items() if keyword.lower() in name.lower() or keyword.lower() in data.get("description", "").lower()}
+    if not results:
+        raise HTTPException(status_code=404, detail="No recipes match your search criteria.")
+    return results
 
 @app.get("/recipes")
 async def list_recipes():
     return {"endpoints": list(recipes.keys())}
-
 
 @app.post("/submit")
 async def submit_recipe(recipe: RecipeSubmission):
@@ -69,13 +62,11 @@ async def submit_recipe(recipe: RecipeSubmission):
     
     return {"message": "Submission received! It'll be reviewed shortly."}
 
-
 @app.get("/")
 async def ping():
     return {
         "message": "Welcome to BakeBook! Use /recipes to see available recipes, or /submit to submit a new recipe."
     }
-
 
 if __name__ == "__main__":
     import uvicorn
