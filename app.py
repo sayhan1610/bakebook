@@ -77,7 +77,7 @@ async def submit_recipe(recipe: RecipeSubmission):
 @app.get("/")
 async def ping():
     return {
-        "message": "Welcome to BakeBook! Use /recipes to see available recipes, or /submit to submit a new recipe."
+        "message": "Welcome to BakeBook! Use /recipes, /search to search for one to see available recipes, or /submit to submit a new recipe. Alternatively, visit https://sayhan1610.github.io/BakeBook/ to use the GUI."
     }
 
 if __name__ == "__main__":
