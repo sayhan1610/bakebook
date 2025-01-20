@@ -3,8 +3,8 @@
 
 ## Table of Contents:
 
-- [BakeBook API 🍰](#bakebook-api-🍰)
-- [BakeBook WebUI 🕸️](#bakebook-webui-🕸️)
+- [BakeBook API 🍰](https://github.com/sayhan1610/bakebook?tab=readme-ov-file#bakebook-api-)
+- [BakeBook WebUI 🕸️](https://github.com/sayhan1610/bakebook?tab=readme-ov-file#bakebook-webui-%EF%B8%8F)
 
 # BakeBook API 🍰
 
