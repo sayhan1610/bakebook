@@ -15,6 +15,8 @@ except FileNotFoundError:
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
+
+
 if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
     raise RuntimeError("Telegram bot token or chat ID is not set. Check your environment variables.")
 
